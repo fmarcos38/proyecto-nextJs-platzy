@@ -1,10 +1,12 @@
 import React from "react";
 
-function MainLayout() {
+function MainLayout({ children }) {
     return
-    <div>
-        MainLayout
-    </div>
+    <>
+        <div>
+            
+        </div>
+    </>;
 }
 
 export default MainLayout;
