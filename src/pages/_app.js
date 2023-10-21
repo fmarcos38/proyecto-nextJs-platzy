@@ -1,12 +1,15 @@
 import "@styles/tailwind.css"; //nueva forma de importar SIN ../
+import { ProviderAuth } from "hooks/useAuth";
 import MainLayout from "layout/MainLayout";
 
 function MyApp({ Component, pageProps }) {
   return(
     <>
-      <MainLayout>
-        <Component {...pageProps} />;
-      </MainLayout>      
+      <ProviderAuth>
+        <MainLayout>
+          <Component {...pageProps} />;
+        </MainLayout>      
+      </ProviderAuth>      
     </>
   )
 
